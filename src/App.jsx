@@ -53,12 +53,12 @@ const DEFAULT_PLANS = [
 // ── CSS ───────────────────────────────────────────────────────────────────────
 const CSS = `
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#0a0a0a;color:#e8e8e8;font-family:'Barlow',sans-serif;-webkit-tap-highlight-color:transparent}
+body{background:#0a0a0a;color:#e8e8e8;font-family:'Barlow',sans-serif;-webkit-tap-highlight-color:transparent;padding-top:env(safe-area-inset-top)}
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
 input[type=number]{-moz-appearance:textfield}
 ::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#111}::-webkit-scrollbar-thumb{background:#c8ff00;border-radius:2px}
 .app{min-height:100vh;background:#0a0a0a;background-image:radial-gradient(ellipse at 80% 0%,rgba(200,255,0,.04) 0%,transparent 60%),radial-gradient(ellipse at 20% 100%,rgba(200,255,0,.03) 0%,transparent 50%)}
-.header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid #1a1a1a;position:sticky;top:0;z-index:100;background:rgba(10,10,10,.97);backdrop-filter:blur(10px)}
+.header{display:flex;align-items:center;justify-content:space-between;padding:env(safe-area-inset-top, 16px) 20px 16px;border-bottom:1px solid #1a1a1a;position:sticky;top:0;z-index:100;background:rgba(10,10,10,.97);backdrop-filter:blur(10px)}
 .logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:4px;color:#c8ff00;text-shadow:0 0 20px rgba(200,255,0,.3)}
 .logo span{color:#fff}
 .nav{display:flex;gap:3px;background:#111;border:1px solid #1e1e1e;border-radius:8px;padding:3px}
